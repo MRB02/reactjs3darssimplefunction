@@ -1,23 +1,21 @@
 import React, { useState } from 'react';
+import BtnIncrDecr from './component/BtnIncrDecr';
+import Input from './component/Input';
+import './style.css';
 
 function App() {
  
-  const [count, setCount]=useState(0);
+ 
 
-  function incr(){
-    setCount(count+1)
-  }
-  function decr(){
-    setCount(count-1)
-  }
+  
+
+  
     return ( <>
-    <h3>Count:{count}</h3>
-    <button 
-    onClick={incr}
-    className="btn btn-success">Incr</button>
-    <button 
-    onClick={decr}
-    className="btn btn-danger">Decr</button>
+    <div className="app">  
+    <BtnIncrDecr/> 
+    <Input/>
+    </div>
+
     </>
     )
 }
